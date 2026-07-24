@@ -9,7 +9,7 @@ export default function PublicLayout() {
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-100 shadow-sm">
         <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between gap-8">
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[#112E81] to-[#00D2FF] flex items-center justify-center shadow-md shadow-[#112E81]/20 group-hover:scale-105 transition-transform">
+            <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[#112E81] to-[#5790F4] flex items-center justify-center shadow-md shadow-[#112E81]/20 group-hover:scale-105 transition-transform">
               <Zap className="w-4 h-4 text-white fill-white" />
             </div>
             <span className="text-[15px] font-bold text-slate-900">CampusConnect</span>
@@ -35,7 +35,7 @@ export default function PublicLayout() {
             </Link>
             <Link
               to="/signup"
-              className="px-4 py-2 rounded-xl bg-[#112E81] text-white text-sm font-semibold hover:bg-[#0e2468] hover:-translate-y-0.5 transition-all shadow-sm shadow-[#112E81]/30 border border-[#00D2FF]/20"
+              className="px-4 py-2 rounded-xl bg-[#112E81] text-white text-sm font-semibold hover:bg-[#0e2468] hover:-translate-y-0.5 transition-all shadow-sm shadow-[#112E81]/30 border border-[#5790F4]/20"
             >
               Sign Up
             </Link>
@@ -53,7 +53,7 @@ export default function PublicLayout() {
           <div className="flex flex-col md:flex-row justify-between items-start gap-8 mb-10">
             <div>
               <div className="flex items-center gap-2 mb-3">
-                <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-[#112E81] to-[#00D2FF] flex items-center justify-center">
+                <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-[#112E81] to-[#5790F4] flex items-center justify-center">
                   <Zap className="w-3.5 h-3.5 text-white fill-white" />
                 </div>
                 <span className="text-white font-bold">CampusConnect</span>
@@ -69,7 +69,7 @@ export default function PublicLayout() {
                 { to: "/departments", label: "Departments" },
                 { to: "/login", label: "Log In" },
               ].map((l) => (
-                <Link key={l.label} to={l.to} className="hover:text-[#00D2FF] transition-colors">
+                <Link key={l.label} to={l.to} className="hover:text-[#5790F4] transition-colors">
                   {l.label}
                 </Link>
               ))}

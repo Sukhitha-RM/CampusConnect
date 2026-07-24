@@ -107,11 +107,11 @@ export default function Settings() {
       {/* Notifications */}
       <div className="bg-white rounded-2xl border border-slate-100 p-6 shadow-sm">
         <div className="flex items-center gap-3 mb-6">
-          <div className="w-9 h-9 rounded-xl bg-[#00D2FF]/20 flex items-center justify-center">
+          <div className="w-9 h-9 rounded-xl bg-[#5790F4]/20 flex items-center justify-center">
             <Bell className="w-5 h-5 text-[#112E81]" />
           </div>
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-[#0083a3]">Notifications</p>
+            <p className="text-xs font-bold uppercase tracking-widest text-[#5790F4]">Notifications</p>
             <h2 className="text-lg font-black text-slate-900">Notification Preferences</h2>
           </div>
         </div>
@@ -159,7 +159,7 @@ export default function Settings() {
             id="reminder-timing"
             value={settings.reminderTiming}
             onChange={(e) => handleSave({ reminderTiming: e.target.value })}
-            className="h-9 px-3 rounded-xl border border-slate-200 bg-white text-sm font-medium text-slate-700 focus:outline-none focus:ring-2 focus:ring-[#00D2FF]/40 focus:border-[#112E81] transition-all"
+            className="h-9 px-3 rounded-xl border border-slate-200 bg-white text-sm font-medium text-slate-700 focus:outline-none focus:ring-2 focus:ring-[#5790F4]/40 focus:border-[#112E81] transition-all"
           >
             {REMINDER_TIMES.map((t) => <option key={t.value} value={t.value}>{t.label}</option>)}
           </select>

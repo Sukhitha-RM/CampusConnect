@@ -12,12 +12,12 @@ export default function Landing() {
       {/* ── HERO ─────────────────────────────── */}
       <section className="relative overflow-hidden hero-gradient">
         {/* Decorative blobs */}
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#00D2FF]/15 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none" />
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#5790F4]/15 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#112E81]/15 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3 pointer-events-none" />
 
         <div className="relative max-w-7xl mx-auto px-6 pt-24 pb-28 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#112E81]/10 border border-[#112E81]/20 text-[#112E81] text-sm font-semibold mb-8 animate-fade-in">
-            <Zap className="w-3.5 h-3.5 text-[#00D2FF] fill-[#00D2FF]" />
+            <Zap className="w-3.5 h-3.5 text-[#5790F4] fill-[#5790F4]" />
             Where campus life comes together
           </div>
 
@@ -34,9 +34,9 @@ export default function Landing() {
 
           <div className="flex flex-wrap items-center justify-center gap-4 animate-fade-in">
             <Link to="/events">
-              <Button size="lg" className="bg-[#112E81] hover:bg-[#0e2468] text-white gap-2 shadow-xl shadow-[#112E81]/30 border border-[#00D2FF]/30">
+              <Button size="lg" className="bg-[#112E81] hover:bg-[#0e2468] text-white gap-2 shadow-xl shadow-[#112E81]/30 border border-[#5790F4]/30">
                 Explore Events
-                <ArrowRight className="w-4 h-4 text-[#00D2FF]" />
+                <ArrowRight className="w-4 h-4 text-[#5790F4]" />
               </Button>
             </Link>
             <Link to="/login">
@@ -66,10 +66,10 @@ export default function Landing() {
       <section className="max-w-7xl mx-auto px-6 py-20">
         <div className="flex items-end justify-between gap-4 mb-10">
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-[#00a7cc] mb-2">Discover</p>
+            <p className="text-xs font-bold uppercase tracking-widest text-[#5790F4] mb-2">Discover</p>
             <h2 className="text-4xl font-black text-slate-900 tracking-tight">Upcoming Events</h2>
           </div>
-          <Link to="/events" className="flex items-center gap-1.5 text-sm font-semibold text-[#112E81] hover:text-[#00D2FF] transition-colors group">
+          <Link to="/events" className="flex items-center gap-1.5 text-sm font-semibold text-[#112E81] hover:text-[#5790F4] transition-colors group">
             View All
             <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
           </Link>
@@ -78,7 +78,7 @@ export default function Landing() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {featuredEvents.map((event) => (
             <div key={event.id} className="group bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-              <div className="relative h-48 bg-gradient-to-br from-[#112E81]/10 to-[#00D2FF]/20 overflow-hidden">
+              <div className="relative h-48 bg-gradient-to-br from-[#112E81]/10 to-[#5790F4]/20 overflow-hidden">
                 <img
                   src={event.image}
                   alt={event.title}
@@ -97,7 +97,7 @@ export default function Landing() {
                 </p>
                 <h3 className="font-bold text-slate-900 mb-1 group-hover:text-[#112E81] transition-colors">{event.title}</h3>
                 <p className="text-sm text-slate-500 mb-4 flex items-center gap-1.5">
-                  <Users className="w-3.5 h-3.5 text-[#00D2FF]" />
+                  <Users className="w-3.5 h-3.5 text-[#5790F4]" />
                   {event.registered} attending · {event.venue}
                 </p>
                 <Link to={`/events/${event.id}`}>
@@ -165,13 +165,13 @@ export default function Landing() {
 
       {/* ── CTA ──────────────────────────────── */}
       <section className="mx-6 mb-20">
-        <div className="max-w-4xl mx-auto bg-gradient-to-br from-[#112E81] via-[#0e2468] to-[#070b1e] rounded-3xl p-12 text-center text-white relative overflow-hidden border border-[#00D2FF]/20 shadow-2xl">
+        <div className="max-w-4xl mx-auto bg-gradient-to-br from-[#112E81] via-[#0e2468] to-[#070b1e] rounded-3xl p-12 text-center text-white relative overflow-hidden border border-[#5790F4]/20 shadow-2xl">
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(0,210,255,0.15),transparent)] pointer-events-none" />
           <h2 className="text-4xl font-black mb-4 relative">Ready to join campus life?</h2>
           <p className="text-slate-300 mb-8 text-lg relative max-w-xl mx-auto">Create your free account and start discovering events today.</p>
           <div className="flex flex-wrap justify-center gap-4 relative">
             <Link to="/signup">
-              <Button size="lg" className="bg-[#00D2FF] text-[#070b1e] font-extrabold hover:bg-[#5ae2ff] shadow-xl shadow-[#00D2FF]/20">
+              <Button size="lg" className="bg-[#5790F4] text-[#070b1e] font-extrabold hover:bg-[#3B82F6] shadow-xl shadow-[#5790F4]/20">
                 Get Started Free
               </Button>
             </Link>

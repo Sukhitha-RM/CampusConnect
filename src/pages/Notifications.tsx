@@ -33,7 +33,7 @@ export default function Notifications() {
         </div>
         {unreadCount > 0 && (
           <Button variant="outline" size="sm" onClick={markAllRead} className="flex-shrink-0 border-[#112E81]/30 text-[#112E81] hover:bg-[#112E81]/5">
-            <CheckCheck className="w-3.5 h-3.5 text-[#00a7cc]" /> Mark all read
+            <CheckCheck className="w-3.5 h-3.5 text-[#5790F4]" /> Mark all read
           </Button>
         )}
       </div>
@@ -84,7 +84,7 @@ function NotificationRow({ notification: n, onRead }: { notification: Notificati
 
   return (
     <div
-      className={cn(
+          className={cn(
         "flex gap-4 p-4 rounded-2xl border transition-all cursor-pointer hover:shadow-sm",
         !n.read ? "bg-[#112E81]/5 border-[#112E81]/20" : "bg-white border-slate-100"
       )}
@@ -96,7 +96,7 @@ function NotificationRow({ notification: n, onRead }: { notification: Notificati
       <div className="flex-1 min-w-0">
         <div className="flex items-start justify-between gap-2">
           <h3 className={cn("text-sm font-bold", !n.read ? "text-slate-900" : "text-slate-700")}>{n.title}</h3>
-          {!n.read && <span className="w-2 h-2 bg-[#00D2FF] rounded-full flex-shrink-0 mt-1.5" />}
+          {!n.read && <span className="w-2 h-2 bg-[#5790F4] rounded-full flex-shrink-0 mt-1.5" />}
         </div>
         <p className="text-sm text-slate-500 mt-0.5 leading-relaxed">{n.message}</p>
         <p className="text-xs text-slate-400 mt-1.5">{n.time}</p>

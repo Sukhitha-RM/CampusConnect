@@ -29,7 +29,7 @@ export default function Departments() {
           placeholder="Search by department name..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="pl-10 focus-visible:ring-[#00D2FF] focus-visible:border-[#112E81]"
+          className="pl-10 focus-visible:ring-[#5790F4] focus-visible:border-[#112E81]"
         />
       </div>
 

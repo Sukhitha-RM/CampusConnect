@@ -47,20 +47,20 @@ export default function Events() {
               placeholder="Search by event, department, venue..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="pl-10 focus-visible:ring-[#00D2FF] focus-visible:border-[#112E81]"
+              className="pl-10 focus-visible:ring-[#5790F4] focus-visible:border-[#112E81]"
             />
           </div>
           <select
             value={dept}
             onChange={(e) => setDept(e.target.value)}
-            className="h-10 px-3 rounded-xl border border-slate-200 bg-white text-sm text-slate-700 font-medium focus:outline-none focus:ring-2 focus:ring-[#00D2FF]/40 focus:border-[#112E81] transition-all"
+            className="h-10 px-3 rounded-xl border border-slate-200 bg-white text-sm text-slate-700 font-medium focus:outline-none focus:ring-2 focus:ring-[#5790F4]/40 focus:border-[#112E81] transition-all"
           >
             {DEPARTMENTS.map((d) => <option key={d}>{d}</option>)}
           </select>
           <select
             value={cat}
             onChange={(e) => setCat(e.target.value)}
-            className="h-10 px-3 rounded-xl border border-slate-200 bg-white text-sm text-slate-700 font-medium focus:outline-none focus:ring-2 focus:ring-[#00D2FF]/40 focus:border-[#112E81] transition-all"
+            className="h-10 px-3 rounded-xl border border-slate-200 bg-white text-sm text-slate-700 font-medium focus:outline-none focus:ring-2 focus:ring-[#5790F4]/40 focus:border-[#112E81] transition-all"
           >
             {CATEGORIES.map((c) => <option key={c}>{c}</option>)}
           </select>
@@ -90,7 +90,7 @@ export default function Events() {
           <SlidersHorizontal className="w-10 h-10 text-slate-300 mx-auto mb-3" />
           <h3 className="text-lg font-bold text-slate-700 mb-1">No events found</h3>
           <p className="text-slate-400 text-sm">Try changing your search or filters.</p>
-          <button onClick={clearFilters} className="mt-4 text-sm font-bold text-[#112E81] hover:text-[#00D2FF]">
+          <button onClick={clearFilters} className="mt-4 text-sm font-bold text-[#112E81] hover:text-[#5790F4]">
             Clear all filters →
           </button>
         </div>

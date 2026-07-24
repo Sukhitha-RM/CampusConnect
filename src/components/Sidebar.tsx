@@ -1,6 +1,6 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import {
-  LayoutDashboard, Search, Star, CalendarDays, Building2,
+  LayoutDashboard, Star, CalendarDays, Building2,
   CheckCircle2, Heart, Bell, User, Settings, LogOut, X, Zap,
 } from "lucide-react";
 import { useApp } from "@/context/AppContext";
@@ -8,7 +8,6 @@ import { cn } from "@/lib/utils";
 
 const mainLinks = [
   { to: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
-  { to: "/events", label: "Discover", icon: Search },
   { to: "/events", label: "Events", icon: Star },
   { to: "/calendar", label: "Calendar", icon: CalendarDays },
   { to: "/departments", label: "Departments", icon: Building2 },
@@ -36,7 +35,7 @@ export default function Sidebar() {
       {/* Header */}
       <div className="flex items-center justify-between px-5 py-5 border-b border-white/10">
         <NavLink to="/dashboard" className="flex items-center gap-2.5 group">
-          <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[#112E81] to-[#00D2FF] flex items-center justify-center shadow-lg shadow-[#00D2FF]/20 group-hover:scale-105 transition-transform">
+          <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[#112E81] to-[#5790F4] flex items-center justify-center shadow-lg shadow-[#5790F4]/20 group-hover:scale-105 transition-transform">
             <Zap className="w-4 h-4 text-white fill-white" />
           </div>
           <span className="text-[15px] font-bold tracking-tight text-white">CampusConnect</span>
@@ -137,7 +136,7 @@ function SidebarLink({
         cn(
           "flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-200",
           isActive
-            ? "bg-[#112E81] text-white shadow-lg shadow-[#112E81]/40 border-r-2 border-[#00D2FF]"
+            ? "bg-[#112E81] text-white shadow-lg shadow-[#112E81]/40 border-r-2 border-[#5790F4]"
             : "text-slate-300 hover:text-white hover:bg-white/8"
         )
       }
@@ -145,7 +144,7 @@ function SidebarLink({
       <Icon className="w-4 h-4 flex-shrink-0" />
       <span className="flex-1">{label}</span>
       {badgeCount > 0 && (
-        <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#00D2FF] text-[10px] font-extrabold text-[#070b1e]">
+        <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#5790F4] text-[10px] font-extrabold text-[#070b1e]">
           {badgeCount}
         </span>
       )}

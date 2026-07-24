@@ -44,21 +44,21 @@ export default function Profile() {
       )}
 
       {/* Profile overview card */}
-      <div className="bg-gradient-to-br from-[#112E81] via-[#0e2468] to-[#070b1e] rounded-3xl p-8 text-white relative overflow-hidden border border-[#00D2FF]/20 shadow-xl">
+      <div className="bg-gradient-to-br from-[#112E81] via-[#0e2468] to-[#070b1e] rounded-3xl p-8 text-white relative overflow-hidden border border-[#5790F4]/20 shadow-xl">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(0,210,255,0.15),transparent)] pointer-events-none" />
         <div className="relative flex flex-col md:flex-row md:items-center gap-6 z-10">
-          <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#112E81] to-[#00D2FF] flex items-center justify-center text-4xl font-black text-white border border-[#00D2FF]/30 shadow-lg flex-shrink-0">
+          <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#112E81] to-[#5790F4] flex items-center justify-center text-4xl font-black text-white border border-[#5790F4]/30 shadow-lg flex-shrink-0">
             {user.initial}
           </div>
           <div className="flex-1">
-            <p className="text-[#00D2FF] text-sm font-bold mb-1 uppercase tracking-wider">Student Profile</p>
+            <p className="text-[#5790F4] text-sm font-bold mb-1 uppercase tracking-wider">Student Profile</p>
             <h2 className="text-3xl font-black mb-1 text-white">{user.name}</h2>
             <p className="text-slate-300 font-medium">{user.department}</p>
           </div>
           {!editing && (
             <Button
               onClick={() => setEditing(true)}
-              className="bg-[#00D2FF] text-[#070b1e] font-extrabold hover:bg-[#5ae2ff] flex-shrink-0 shadow-lg"
+              className="bg-[#5790F4] text-[#070b1e] font-extrabold hover:bg-[#3B82F6] flex-shrink-0 shadow-lg"
             >
               <Pencil className="w-4 h-4" /> Edit Profile
             </Button>
@@ -96,11 +96,11 @@ export default function Profile() {
         {/* Academic */}
         <div className="bg-white rounded-2xl border border-slate-100 p-6 shadow-sm">
           <div className="flex items-center gap-2 mb-5">
-            <div className="w-8 h-8 rounded-lg bg-[#00D2FF]/20 flex items-center justify-center">
+            <div className="w-8 h-8 rounded-lg bg-[#5790F4]/20 flex items-center justify-center">
               <GraduationCap className="w-4 h-4 text-[#112E81]" />
             </div>
             <div>
-              <p className="text-xs font-bold uppercase tracking-widest text-[#0083a3]">Academic</p>
+              <p className="text-xs font-bold uppercase tracking-widest text-[#5790F4]">Academic</p>
               <h2 className="text-base font-black text-slate-900">Academic Information</h2>
             </div>
           </div>

@@ -16,7 +16,7 @@ export default function Signup() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#070b1e] via-[#112E81] to-[#070b1e] flex items-center justify-center p-4 relative overflow-hidden">
-      <div className="absolute top-0 right-1/4 w-[600px] h-[400px] bg-[#00D2FF]/15 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-1/4 w-[600px] h-[400px] bg-[#5790F4]/15 rounded-full blur-3xl pointer-events-none" />
 
       <div className="w-full max-w-md relative z-10">
         <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/20">
@@ -26,7 +26,7 @@ export default function Signup() {
           </Link>
 
           <div className="flex items-center gap-2 mb-8">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#112E81] to-[#00D2FF] flex items-center justify-center shadow-lg shadow-[#00D2FF]/20">
+            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#112E81] to-[#5790F4] flex items-center justify-center shadow-lg shadow-[#5790F4]/20">
               <Zap className="w-5 h-5 text-white fill-white" />
             </div>
             <span className="text-lg font-bold text-slate-900">CampusConnect</span>
@@ -86,7 +86,7 @@ export default function Signup() {
 
           <p className="text-center text-sm text-slate-500 mt-6">
             Already have an account?{" "}
-            <Link to="/login" className="text-[#112E81] font-bold hover:text-[#00D2FF] transition-colors">
+            <Link to="/login" className="text-[#112E81] font-bold hover:text-[#5790F4] transition-colors">
               Sign in
             </Link>
           </p>

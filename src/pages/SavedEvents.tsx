@@ -20,7 +20,7 @@ export default function SavedEvents() {
 
       {/* Summary */}
       <div className="flex items-center gap-4 bg-white rounded-2xl border border-slate-100 p-5 shadow-sm w-fit">
-        <div className="w-12 h-12 rounded-xl bg-[#00D2FF]/20 flex items-center justify-center">
+        <div className="w-12 h-12 rounded-xl bg-[#5790F4]/20 flex items-center justify-center">
           <Heart className="w-6 h-6 text-[#112E81] fill-[#112E81]" />
         </div>
         <div>

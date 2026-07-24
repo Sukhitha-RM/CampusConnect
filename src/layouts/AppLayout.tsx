@@ -8,7 +8,7 @@ export default function AppLayout() {
   const { sidebarOpen, setSidebarOpen } = useApp();
 
   return (
-    <div className="flex h-screen overflow-hidden bg-slate-50">
+    <div className="flex h-screen overflow-hidden bg-background text-foreground transition-colors duration-300">
       {/* Sidebar — fixed on desktop, slide-over on mobile */}
       <div
         className={cn(

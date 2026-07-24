@@ -17,7 +17,7 @@ export default function Login() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#070b1e] via-[#112E81] to-[#070b1e] flex items-center justify-center p-4 relative overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[#00D2FF]/15 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[#5790F4]/15 rounded-full blur-3xl pointer-events-none" />
 
       <div className="w-full max-w-md relative z-10">
         {/* Card */}
@@ -30,7 +30,7 @@ export default function Login() {
 
           {/* Logo */}
           <div className="flex items-center gap-2 mb-8">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#112E81] to-[#00D2FF] flex items-center justify-center shadow-lg shadow-[#00D2FF]/20">
+            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#112E81] to-[#5790F4] flex items-center justify-center shadow-lg shadow-[#5790F4]/20">
               <Zap className="w-5 h-5 text-white fill-white" />
             </div>
             <span className="text-lg font-bold text-slate-900">CampusConnect</span>
@@ -49,7 +49,7 @@ export default function Login() {
                 value={form.email}
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
                 required
-                className="focus-visible:ring-[#00D2FF] focus-visible:border-[#112E81]"
+                className="focus-visible:ring-[#5790F4] focus-visible:border-[#112E81]"
               />
             </div>
 
@@ -63,7 +63,7 @@ export default function Login() {
                   value={form.password}
                   onChange={(e) => setForm({ ...form, password: e.target.value })}
                   required
-                  className="pr-11 focus-visible:ring-[#00D2FF] focus-visible:border-[#112E81]"
+                  className="pr-11 focus-visible:ring-[#5790F4] focus-visible:border-[#112E81]"
                 />
                 <button
                   type="button"
@@ -82,7 +82,7 @@ export default function Login() {
 
           <p className="text-center text-sm text-slate-500 mt-6">
             Don't have an account?{" "}
-            <Link to="/signup" className="text-[#112E81] font-bold hover:text-[#00D2FF] transition-colors">
+            <Link to="/signup" className="text-[#112E81] font-bold hover:text-[#5790F4] transition-colors">
               Sign up free
             </Link>
           </p>

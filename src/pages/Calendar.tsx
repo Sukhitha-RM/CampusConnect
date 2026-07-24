@@ -119,7 +119,7 @@ export default function Calendar() {
                           </div>
                         ))}
                         <div className="md:hidden flex justify-center mt-1">
-                          <span className="w-1.5 h-1.5 bg-[#00D2FF] rounded-full" />
+                          <span className="w-1.5 h-1.5 bg-[#5790F4] rounded-full" />
                         </div>
                       </div>
                     )}
@@ -138,14 +138,14 @@ export default function Calendar() {
           <div className="space-y-3">
             {selectedEvents.map((e) => (
               <div key={e.id} className="flex items-center gap-4 p-3 rounded-xl bg-[#112E81]/5 border border-[#112E81]/10">
-                <div className="w-10 h-10 rounded-xl bg-[#112E81] flex items-center justify-center text-[#00D2FF] text-sm font-black flex-shrink-0">
+                <div className="w-10 h-10 rounded-xl bg-[#112E81] flex items-center justify-center text-[#5790F4] text-sm font-black flex-shrink-0">
                   {selectedDay}
                 </div>
                 <div className="flex-1">
                   <h4 className="font-bold text-slate-900 text-sm">{e.title}</h4>
                   <p className="text-xs text-slate-500">{e.time} · {e.venue}</p>
                 </div>
-                <Link to={`/events/${e.id}`} className="text-xs font-bold text-[#112E81] hover:text-[#00D2FF]">
+                <Link to={`/events/${e.id}`} className="text-xs font-bold text-[#112E81] hover:text-[#5790F4]">
                   View →
                 </Link>
               </div>
@@ -161,7 +161,7 @@ export default function Calendar() {
             <p className="text-xs font-bold uppercase tracking-widest text-[#112E81] mb-1">What's Next</p>
             <h2 className="text-xl font-black text-slate-900">Upcoming Events</h2>
           </div>
-          <Link to="/events" className="text-sm font-bold text-[#112E81] hover:text-[#00D2FF] flex items-center gap-1">
+          <Link to="/events" className="text-sm font-bold text-[#112E81] hover:text-[#5790F4] flex items-center gap-1">
             View all <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </div>
@@ -181,7 +181,7 @@ export default function Calendar() {
                 <span className="hidden md:block text-xs px-2.5 py-1 bg-slate-100 text-slate-600 rounded-full font-medium">
                   {e.category}
                 </span>
-                <Link to={`/events/${e.id}`} className="text-xs font-bold text-[#112E81] hover:text-[#00D2FF] flex items-center gap-1 flex-shrink-0">
+                <Link to={`/events/${e.id}`} className="text-xs font-bold text-[#112E81] hover:text-[#5790F4] flex items-center gap-1 flex-shrink-0">
                   View <ArrowRight className="w-3 h-3" />
                 </Link>
               </div>
